@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiplos</title>
+</head>
+<body>
+
+<section id="Tabla"></section>
+
+    <script>
+    const container = document.getElementById(`Tabla`);
+    const numero = prompt("Numero que desea maltiplicar");
+
+     for (let i = 1; i <= 10; i++ ) {
+
+        const parrafo = document.createElement(`p`);
+        parrafo.textContent = `${numero} x ${i} = ${numero * i}`;
+        container.appendChild(parrafo)
+
+    }
+
+    </script>
+</body>
+</html>

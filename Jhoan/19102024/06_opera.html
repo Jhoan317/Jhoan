@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operaciones</title>
+</head>
+<body>
+    <style>
+        main{display: grid; grid-template-columns: 1fr 1fr;}
+        section{display: grid;grid-template-columns: 1fr; padding: 2rem; gap: 1rem;}
+    </style>
+    <main>
+            <section>
+                <input type="text" id="sum1">
+                <input type="text" id="sum2">
+                <input type="text" id="respsum" disabled>
+                <button id="sumar"> sumar </button>
+            </section>
+            <section>
+                <input type="text" id="minuendo">
+                <input type="text" id="sustraendo">
+                <input type="text" id="resprest" disabled>
+                <button id="resta"> resta</button>
+
+            </section>
+            <section>
+                <input type="text" id="multiplo">
+                <input type="text" id="operador">
+                <input type="text" id="respmult"  disabled >
+                <button id="multiplicar"> multiplicar </button>
+            </section>
+            <section>
+                <input type="text" id="dividendo">
+                <input type="text" id="divisor">
+                <input type="text" id="respdiv" disabled>
+                <button id="dividir"> dividir</button>
+
+
+            </section>
+            <script>
+               const sumar1 = document.getElementById("sum1");
+               const sumar2 = document.getElementById("sum2");
+               const outsum = document.getElementById("respsum");
+               const btnSuma = document.getElementById("sumar");
+               btnSuma.addEventListener("click", () => {
+                console.log( parseFloat(sumar1.value) + parseFloat(sumar2.value));
+                outsum.value = parseFloat(sumar1.value) + parseFloat(sumar2.value);
+               });
+
+            </script>
+             <script>
+                const restar1 = document.getElementById("minuendo");
+                const restar2 = document.getElementById("sustraendo");
+                const outrestar = document.getElementById("resprest");
+                const btnrestar = document.getElementById("resta");
+                btnrestar.addEventListener("click", () => {
+                 console.log( parseFloat(restar1.value) - parseFloat(restar2.value));
+                 outrestar.value = parseFloat(restar1.value) - parseFloat(restar2.value);
+                });
+ 
+             </script>
+             <script>
+                const multiplicar1 = document.getElementById("multiplo");
+               const multiplicar2 = document.getElementById("operador");
+               const outmult = document.getElementById("respmult");
+               const btnmult = document.getElementById("multiplicar");
+               btnmult.addEventListener("click", () => {
+                console.log( parseFloat(multiplicar1.value) * parseFloat(multiplicar2.value));
+                outmult.value = parseFloat(multiplicar1.value) * parseFloat(multiplicar2.value);
+               });
+             </script>
+             <script>
+                 const dividir1 = document.getElementById("dividendo");
+               const dividir2 = document.getElementById("divisor");
+               const outdiv = document.getElementById("respdiv");
+               const btndiv = document.getElementById("dividir");
+               btndiv.addEventListener("click", () => {
+                console.log( parseFloat(dividir1.value) / parseFloat(dividir2.value));
+                outdiv.value = parseFloat(dividir1.value) / parseFloat(dividir2.value);
+               });
+             </script>
+
+            
+    </main>
+</body>
+</html>

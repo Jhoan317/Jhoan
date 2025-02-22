@@ -1,0 +1,91 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    
+}
+header{
+    border:solid  rgba(255, 0, 0, 0.592);
+    height: 100px;
+    display: grid;
+    grid-template-columns: 100px 2fr;
+    gap: 1rem;
+
+}
+ul{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    list-style: none;
+}
+nav{
+    border:solid rgb(0, 0, 255);
+    height: 100px;
+}
+
+main{
+   border: solid orange;
+  
+}
+aside{
+    border:solid green;
+    grid-row: 3/4;
+    padding: 5px;
+
+}
+footer{ border: solid violet; height: 100px;
+}
+header, nav, footer{ grid-column: 1/3;}
+header,  main, aside{border-radius: 1rem;}
+
+#circle{
+    border: solid red;
+    border-radius: 90%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+ 
+}
+#sectionmain, #sectionmain2{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: solid pink;
+
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+}
+article{
+    border: 2px dotted blue;
+    
+
+}
+#section1{border: solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+
+
+}
+#sec-01{
+    grid-column: 1/3;
+    height: 50px;
+
+}
+#section2{border: solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    
+    gap: 8px;
+
+}
+#sectionmain2{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+#A1{
+    grid-column: 1/2;
+}
